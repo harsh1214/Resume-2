@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+header.header-container {
+    height: 100px;
+    background-color: #363d47;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-gap: 5px;
+    padding: 0 2rem;
+}
+
+.main-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 2rem; */
+}
+
+.primary-container {
+    grid-column: 1/3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    align-items: flex-start;
+    padding: 2rem;
+
+}
+
+.secondary-container{
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: #f2f2f2;
+    min-height: calc(100vh - 99px);
+    max-height: fit-content;
+    margin-top: 1px;
+}
+
+/* .obj-container{} */
+
+.p-about,
+.e-container,
+.obj-text{
+    width: 100%;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.h-heading{
+    font-size: 20pt;
+}
+
+.s-heading,
+.e-heading,
+.p-heading{
+    font-weight: 600;
+    font-size: 18pt;
+    margin-bottom: 0.2rem;
+    color: #363d47;
+}
+
+.hr-line{
+    width: 100%;
+    color: #363d47;
+    margin-bottom: 1rem;
+}
+
+.e-container,
+.p-container{
+    margin: 1rem 0 0 0;
+}
+
+.p-title{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #363d47;
+}
+
+.e-name{
+    font-weight: bold;
+    color: #363d47;
+}
+
+.skill-container,
+.strength-container,
+.education-container{
+    width: 100%;
+}
+
+.e-location{
+    font-style: italic;
+}
+
+.p-text-container{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0.5rem;
+}
+
+.p-text{
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    color: #363d47;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.s-ul-list{
+    margin: 0 20px;
+
+}
+
+.s-li-list{
+    margin: 10px 0;
+}
+
+li.s-li-list::marker{
+    color: #363d47;
+}
+
+.cap-text{
+    font-variant-caps: all-petite-caps;
+}
